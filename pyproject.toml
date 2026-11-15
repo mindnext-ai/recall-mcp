@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recall-mcp"
+version = "0.1.0"
+description = "Zero-dependency spaced-repetition flashcards as an MCP server (SM-2 + SQLite, pure standard library)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "mindnext-ai" }]
+keywords = ["mcp", "model-context-protocol", "flashcards", "spaced-repetition", "sm-2", "anki"]
+
+[project.scripts]
+recall-mcp = "recall_mcp.server:main"
+recall = "recall_mcp.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["recall_mcp*"]

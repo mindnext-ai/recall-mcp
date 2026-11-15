@@ -1,0 +1,1 @@
+{"mcpServers":{"recall":{"args":["-m","recall_mcp"],"command":"python","env":{"RECALL_MCP_DB":"C:/Users/you/.recall-mcp/recall.db"}}}}
